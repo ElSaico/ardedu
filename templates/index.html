@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ardedu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='ardedu.css') }}">
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="hero-unit">
+      <h1>Ardedu</h1>
+      <form id="files" action="/" method="POST" enctype="multipart/form-data">
+        <label ref="web-of-science">
+          Web of Science
+          <input name="web-of-science" type="file"/>
+        </label>
+        <label ref="scopus">
+          Scopus
+          <input name="scopus" type="file"/>
+        </label>
+        <label ref="proquest">
+          ProQuest
+          <input name="proquest" type="file"/>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
